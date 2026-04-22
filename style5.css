@@ -1,0 +1,164 @@
+/* Google Font Fallback */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --kia-red: #C4172C;
+    --kia-dark: #050505;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+/* Navbar */
+.nav-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444 !important;
+}
+
+.nav-link.active {
+    color: var(--kia-red) !important;
+}
+
+.dropdown-toggle::after {
+    border-top: .3em solid;
+    vertical-align: middle;
+}
+
+.search-box .form-control {
+    border-radius: 20px 0 0 20px;
+    font-size: 13px;
+}
+
+.search-box .btn {
+    border-radius: 0 20px 20px 0;
+    background: #eee;
+    border: 1px solid #ced4da;
+}
+
+/* Hero Section */
+.hero-banner {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    color: white;
+}
+
+.hero-text-box h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.hero-text-box p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.price-tag {
+    background: var(--kia-red);
+    display: inline-block;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Section Titles */
+.section-title {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Tabs */
+.nav-pills .nav-link {
+    border-radius: 50px;
+    background: #f8f9fa;
+    margin: 0 5px;
+    color: #333 !important;
+    border: 1px solid #ddd;
+    padding: 8px 25px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--kia-dark) !important;
+    color: white !important;
+}
+
+/* Product Cards */
+.product-card {
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.product-links a:hover {
+    color: var(--kia-red);
+}
+
+/* Tool Cards (Mua Xe) */
+.tool-card {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.tool-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+}
+
+.tool-overlay h5 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.tool-overlay p {
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+/* News Section */
+.news-item img {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Footer */
+.kia-footer {
+    background-color: var(--kia-red);
+}
+
+.kia-footer h6 {
+    font-size: 14px;
+}
+
+.kia-footer ul li {
+    margin-bottom: 8px;
+    color: rgba(255,255,255,0.8);
+}

@@ -1,0 +1,139 @@
+/* Import fonts if needed, here using default clean sans-serif */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Navbar customization */
+.navbar-nav .nav-link {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    color: #333;
+}
+
+.search-box input {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    border: none;
+    width: 150px;
+}
+
+/* Hero Section */
+.hero-banner {
+    overflow: hidden;
+}
+
+.hero-bg {
+    background-color: #BB162B; /* Kia Red */
+    height: 450px;
+    position: relative;
+    /* Tạo hình cắt góc nhọn đặc trưng của banner */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.hero-text {
+    padding-top: 60px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-car-img {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    width: 60%;
+    z-index: 1;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+/* Section titles */
+.section-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Product Tabs */
+.btn-outline-secondary {
+    border-color: #ddd;
+    color: #666;
+}
+
+.btn-outline-dark.active {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.product-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+}
+
+.product-links a:hover {
+    color: #BB162B;
+}
+
+/* Purchase Cards (MUA XE) */
+.cta-card {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cta-card:hover {
+    transform: translateY(-5px);
+}
+
+.cta-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    padding: 20px;
+}
+
+/* News Section */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Footer */
+.footer {
+    background-color: #8B0000; /* Darker red */
+}
+
+.bg-darker {
+    background-color: #600000;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+    .hero-car-img {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+    }
+    .hero-bg {
+        height: auto;
+        padding-bottom: 50px;
+        clip-path: none;
+    }
+}
